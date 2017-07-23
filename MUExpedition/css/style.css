@@ -1,9 +1,17 @@
 body{
 background-color: black;
 color: #E04F00;
+overflow-x: hidden; // hide horizontal
+}
+iframe{
+    max-width: 100%;
+}
+h1#MUtitle{
+  margin-top: 0px;
 }
 h1#MUtitle:hover{
 font-size: 112px;
+font-family: 'Sacramento', cursive; 
 }
 p.tagline:hover{
 font-size: 32px;
@@ -119,14 +127,16 @@ a:hover {
   Hero Styling
 ================================================== */
 .hero {
+  max-height: 400px;
   display: table;
   position: relative;
   background-image: url(../img/cover.png);
   background-size: cover;
-  padding: 150px 0;
+  padding: 70px 0;
   color: #ff5c33;
   width: 100%;
   height: 100vh;
+
 }
 
 .hero:after {
@@ -150,12 +160,12 @@ a:hover {
 }
 
 .hero-brand {
-  margin-bottom: 75px;
+  margin-bottom: 0px;
   display: inline-block;
 }
 
 .hero-brand:hover {
-  opacity: .75;
+  opacity: .5;
 }
 
 .tagline {
